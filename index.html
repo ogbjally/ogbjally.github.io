@@ -1,0 +1,220 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Moje Portfolio</title>
+    <link rel="stylesheet" href="style.css" />
+    <link
+      href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css"
+      rel="stylesheet"
+    />
+  </head>
+
+  <body>
+    <header class="header">
+      <a href="#" class="logo">Portfolio.</a>
+
+      <div class="bx bx-menu" id="menu-icon"></div>
+
+      <nav class="navbar">
+        <a href="#home" class="active">O mnie</a>
+        <a href="#Usługi">Usługi</a>
+        <a href="#Projekty">Projekty</a>
+        <a href="#Kontakt">Kontakt</a>
+      </nav>
+    </header>
+
+    <section class="home" id="home">
+      <div class="home-content">
+        <h1>Cześć, Jestem Jakub</h1>
+        <div class="text-animate">
+          <h3>
+            <span>3</span>
+            <span>D</span>
+            <span>&</span>
+            <span>U</span>
+            <span>I</span>
+            <span>|</span>
+            <span>U</span>
+            <span>X</span>
+            <span>D</span>
+            <span>E</span>
+            <span>S</span>
+            <span>I</span>
+            <span>G</span>
+            <span>N</span>
+            <span>E</span>
+            <span>R</span>
+          </h3>
+        </div>
+        <p>
+          Jestem studentem II roku na kierunku Informatyka w Collegium Da Vinci.
+          Moje zainteresowania obejmują tworzenie grafik 3D oraz projektowanie
+          stron internetowych z perspektywy UI/UX. Zajmuję się modelowaniem i
+          renderowaniem grafik 3D, a także projektowaniem witryn internetowych,
+          dbając o estetykę i funkcjonalność interfejsu. Jako entuzjasta
+          technologii, stawiam sobie za cel nieustanne rozwijanie umiejętności i
+          angażowanie się w kreatywne projekty. Zapraszam do zapoznania się z
+          moimi pracami, które ilustrują moją pasję do informatyki i designu.
+          Zawsze jestem gotów do nowych wyzwań i współpracy przy innowacyjnych
+          projektach.
+        </p>
+        <div class="btn-box">
+          <a href="CV Jakub B.pdf" target="_blank">CV</a>
+          <a href="#Kontakt">Kontakt</a>
+        </div>
+
+        <div class="home-img">
+          <img src="applemoji.png" alt="" />
+        </div>
+      </div>
+    </section>
+
+    <section class="Usługi" id="Usługi">
+      <h2 class="heading"><span>Usługi</span></h2>
+
+      <div class="Usługi-container">
+      <div class="Usługi-box">
+        <i class="bx bx-code-alt"></i>
+        <h3>Strony Internetowe</h3>
+        <p>
+          Tworzę unikalne i responsywne strony internetowe, dopasowane do Twoich
+          indywidualnych potrzeb. Moje projekty cechuje staranność w każdym
+          detalu, aby zapewnić użytkownikom przyjemne i efektywne doświadczenie
+          podczas przeglądania Twojej witryny.
+        </p>
+
+        <div class="price-container">75PLN/h</div>
+      </div>
+
+      <div class="Usługi-box">
+        <i class="bx bxs-paint"></i>
+        <h3>Grafiki 2D & 3D</h3>
+        <p>
+          Jako profesjonalny projektant, oferuję usługi w zakresie grafiki 2D i
+          3D, dostosowane do Twoich unikalnych wymagań. Bez względu na to, czy
+          potrzebujesz kreatywnych ilustracji, animacji 2D czy zaawansowanych
+          wizualizacji 3D, moje umiejętności pomogą Twoim pomysłom stać się
+          rzeczywistością.
+        </p>
+        <div class="price-container">50PLN/h</div>
+      </div>
+
+      <div class="Usługi-box">
+        <i class="bx bx-bar-chart-alt"></i>
+        <h3>Marketing Online</h3>
+        <p>
+          Moje usługi marketingowe online są zaprojektowane, aby zwiększyć
+          widoczność Twojej marki w świecie cyfrowym. Oferuję spersonalizowane
+          strategie marketingowe oraz zarządzanie mediami społecznościowymi.
+          Dzięki moim rozwiązaniom wzmocnisz swoją obecność online i dotrzesz do
+          nowych klientów.
+        </p>
+        <div class="price-container">35PLN/h</div>
+      </div>
+
+      <div class="calculator">
+        <label for="hours">Liczba godzin:</label>
+        <input type="number" id="hours" placeholder="Podaj liczbę godzin" />
+
+        <label for="rate-web">Stawka za Tworzenie stron internetowych:</label>
+        <input type="number" id="rate-web" placeholder="Stawka za godzinę" />
+
+        <label for="rate-graphics">Stawka za Grafikę 3D i 2D:</label>
+        <input
+          type="number"
+          id="rate-graphics"
+          placeholder="Stawka za godzinę"
+        />
+
+        <label for="rate-marketing">Stawka za Marketing online:</label>
+        <input
+          type="number"
+          id="rate-marketing"
+          placeholder="Stawka za godzinę"
+        />
+
+        <button onclick="calculateTotal()">Oblicz</button>
+
+        <div id="result"></div>
+
+        
+
+      </div>
+    </section>
+
+    <section class="Projekty" id="Projekty">
+      <h2 class="heading">Projekty</h2>
+    </section>
+      
+        <section class="slider-container">
+          <div class="slider-wrapper">
+            <div class="slider">
+             <img id="slide-1" src="wwa at night kopia.jpg" alt="Projekt 1">
+             <img id="slide-2" src="Aplikacja Bankowa.jpg" alt="Projekt 2">
+             <img id="slide-3" src="logomctop.jpg" alt="Projekt 3">
+             <img id="slide-4" src="cryptospace.jpg" alt="Projekt 4">
+             <img id="slide-5" src="mysteryfriend.png" alt="Projekt 5">
+            </div>
+            <div class="slider-nav">
+            <a href="#slide-1"></a>
+            <a href="#slide-2"></a>
+            <a href="#slide-3"></a>
+            <a href="#slide-4"></a>
+            <a href="#slide-5"></a>
+            </div>
+          </div>
+      
+        </section>
+     
+      
+    
+
+    <section class="Kontakt" id="Kontakt">
+      <h2 class="heading">Kontakt</h2>
+
+      <form action="#">
+        <div class="input-box">
+          <input type="text" placeholder="Imię I Nazwisko" />
+          <input type="email" placeholder="Adres E-mail" />
+        </div>
+
+        <div class="input-box">
+          <input type="number" placeholder="Numer Telefonu" />
+          <input type="text" placeholder="Temat E-maila" />
+        </div>
+        <a>
+          <textarea name="" id="" cols="30" rows="10" placeholder="Twoja Wiadomość"></textarea>
+          <input type="Temat" value="Wyślij Wiadomość" class="btn"/>
+        </a>
+      </form>
+    </section>
+
+    <footer class="stopka">
+      <div class="home-sci">
+        <a href="https://www.instagram.com/gfxxbjly/"
+          ><i class="bx bxl-instagram" id="instagram"></i
+        ></a>
+        <a href="https://www.behance.net/jakubbiaasik"
+          ><i class="bx bxl-behance" id="behance"></i
+        ></a>
+        <a href="https://www.linkedin.com/in/jakub-bia%C5%82asik-687a8823b/"
+          ><i class="bx bxl-linkedin-square" id="linkedin"></i
+        ></a>
+      </div>
+      <div class="stopka-text">
+        <p>Copyright &copy; 2023 by Jakub Białasik | All Rights Reserved</p>
+      </div>
+
+      <div class="scrollToTopBtn" id="scrollToTopBtn">
+        <a href="#O mnie"><i class="bx bx-up-arrow-alt"></i></a>
+      </div>
+    </footer>
+
+    <script src="https://unpkg.com/scrollreveal"></script>
+
+    <script src="script.js"></script>
+  </body>
+</html>
