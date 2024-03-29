@@ -89,8 +89,8 @@ document.getElementById("linkedin").onclick = function () {
 
 document.getElementById("pobierzPrzycisk").onclick = function () {
   var link = document.createElement("a");
-  link.href = "Curriculum vitae Jakub B.pdf";
-  link.download = "Curriculum vitae Jakub B.pdf";
+  link.href = "Jakub Białasik Curriculum Vitae.pdf";
+  link.download = "Jakub Białasik Curriculum Vitae.pdf";
   document.body.appendChild(link);
   link.click();
   document.body.removeChild(link);
